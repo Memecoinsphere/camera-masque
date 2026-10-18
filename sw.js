@@ -1,4 +1,4 @@
-const V='camera-masque-v2';
+const V='camera-masque-v3';
 const ASSETS=['./','index.html','style.css','app.js','vision_bundle.mjs','manifest.webmanifest','icon-180.png','icon-192.png','icon-512.png',
 'models/blaze_face_short_range.tflite','models/blaze_face_full_range.tflite',
 'wasm/vision_wasm_internal.js','wasm/vision_wasm_internal.wasm','wasm/vision_wasm_nosimd_internal.js','wasm/vision_wasm_nosimd_internal.wasm'];
