@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Caméra Masque">
+<meta name="theme-color" content="#000000">
+<title>Caméra Masque</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<video id="video" playsinline muted autoplay></video>
+<canvas id="canvas"></canvas>
+<div id="start">
+  <h1>Caméra Masque</h1>
+  <p>Chaque visage est recouvert d'un carré noir en temps réel.<br>Tout est traité sur l'appareil : aucune image n'est envoyée.</p>
+  <button id="startBtn">Activer la caméra</button>
+  <p id="msg" class="msg"></p>
+</div>
+<div id="top">
+  <span id="stats">–</span>
+  <button id="rangeBtn" title="Portée de détection">Portée : auto</button>
+</div>
+<div id="bar">
+  <button id="modeBtn" class="side">Vidéo</button>
+  <button id="shutter" aria-label="Prendre une photo"><span></span></button>
+  <button id="flipBtn" class="side" aria-label="Changer de caméra">⟲</button>
+</div>
+<div id="toast"></div>
+<a id="dl" hidden></a>
+<script type="module" src="app.js"></script>
+</body>
+</html>
